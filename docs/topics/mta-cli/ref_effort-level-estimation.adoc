@@ -12,6 +12,7 @@
 View the general guidelines the {ProductFullName} uses for effort level estimations to determine the complexity of issues identified during the analysis. Understanding the rule story points helps you predict the time and resources required to migrate your applications effectively.
 
 .Guidelines for the level of effort estimation
+pass:[<!-- vale off -->]
 [cols="25%,15%,60%", options="header"]
 |====
 |Level of Effort
@@ -40,5 +41,7 @@ View the general guidelines the {ProductFullName} uses for effort level estimati
 
 |Unknown
 |13
-|The migration solution is not known and may need a complete rewrite.
+|The migration solution is not known and might need a complete rewrite.
 |====
+
+pass:[<!-- vale on -->]

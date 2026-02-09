@@ -96,7 +96,10 @@ endif::[]
 :ProductDocRulesGuideURL: https://access.redhat.com/documentation/en-us/{DocInfoProductNameURL}/{DocInfoProductNumber}/html-single/rules_development_guide
 :ProductDocIntroToMTAGuideURL: https://access.redhat.com/documentation/en-us/{DocInfoProductNameURL}/{DocInfoProductNumber}/html-single/introduction_to_the_{DocInfoProductNameURL}
 :ProductDocIntroToMTAGuideURL: https://access.redhat.com/documentation/en-us/{DocInfoProductNameURL}/{DocInfoProductNumber}/html-single/introduction_to_the_{DocInfoProductNameURL}
+pass:[<!-- vale off -->]
 :LinkAPI: https://github.com/windup/windup/blob/master/
+
+pass:[<!-- vale on -->]
 
 //Links to MTA and MTR Jira project pages:
 :JiraMTAURL: https://issues.redhat.com/projects/MTA
