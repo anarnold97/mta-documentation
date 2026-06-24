@@ -21,14 +21,14 @@ Migrators can use analysis profiles and custom rules downloaded from the {Produc
 +
 [subs="+quotes"]
 ----
-$ *mta-cli config login* 
+$ mta-cli config login 
 ----
 
 . Enter the `Host`, `Username`, and `Password` to connect to the Hub.
 +
 [subs="+quotes"]
 ----
-$ *mta-cli config login*
+$ mta-cli config login
 ----
 +
 [subs="+quotes"]
@@ -45,7 +45,7 @@ Password: _<my_password>_
 +
 [subs="+quotes, macros"]
 ....
-$ *mta-cli config sync --url \https://github.com/_<my_app_repository>_ --application-path _<path_to_my_app>_ --insecure*
+$ mta-cli config sync --url \https://github.com/_<my_app_repository>_ --application-path _<path_to_my_app>_ --insecure
 ....
 +
 [NOTE]
@@ -57,14 +57,14 @@ $ *mta-cli config sync --url \https://github.com/_<my_app_repository>_ --applica
 +
 [subs="+quotes"]
 ----
-$ *mta-cli config list --profile-dir _<path_to_my_app>_*
+$ mta-cli config list --profile-dir _<path_to_my_app>_
 ----
 
 . Run an analysis by using the downloaded profile configuration.
 +
 [subs="+quotes"]
 ----
-$ *mta-cli analyze -i _<path_to_my_app>_ -o _<path_to_my_app_report>_ --overwrite --mode source-only*
+$ mta-cli analyze -i _<path_to_my_app>_ -o _<path_to_my_app_report>_ --overwrite --mode source-only
 ----
 +
 [TIP]
@@ -78,7 +78,7 @@ The following command overrides the values of `target` in the analysis profile w
 
 [subs="+quotes"]
 ----
-$ *mta-cli analyze -i _<path_to_my_app>_ -o _<path_to_my_app_report>_ --overwrite --target quarkus --mode source-only*
+$ mta-cli analyze -i _<path_to_my_app>_ -o _<path_to_my_app_report>_ --overwrite --target quarkus --mode source-only
 ----
 ====
 
