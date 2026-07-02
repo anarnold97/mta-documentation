@@ -1,0 +1,47 @@
+// Module included in the following assemblies:
+//
+// * docs/topics/developer-lightspeed/assembly_understanding_dl.adoc
+
+:_mod-docs-content-type: PROCEDURE
+[id="enabling-agent-mode_{context}"]
+= Enabling agent mode
+
+[role="_abstract"]
+Enable agent mode in {mta-dl-plugin} through the VS Code command palette or the extension settings panel to verify code suggestions automatically with a local build dry run.
+
+.Prerequisites
+
+* You have installed the {mta-dl-plugin} extension in VS Code.
+* Your project has a supported build file (the `pom.xml`, `build.gradle`, or `package.json` file) at the repository root.
+* The corresponding build tool (Maven, Gradle, or npm) is installed and available on your system `PATH`.
+
+.Procedure
+
+. Enable agent mode in one of the following ways:
++
+--
+* By using the command palette:
+
+.. Press Ctrl+Shift+P on Linux or Windows, or Cmd+Shift+P on macOS, to open the command palette.
+.. Type `Preferences: Open User Settings (JSON)` to open the `settings.json` file.
+.. Set the `mta-vscode-extension.genai.agentMode` parameter to `true`.
+
+* By using the extension settings panel:
+
+.. Click **Extensions** > **{mta-dl-plugin}** > **Settings**.
+.. Select the **Agent Mode** checkbox to enable agent mode.
+--
+
+. Restart the IDE language server when you are prompted to apply the change.
+
+.Verification
+
+. Open the Lightspeed output panel by clicking **View** > **Output** > **Red{nbsp}Hat Developer Lightspeed**, and request a code suggestion.
+. Verify that the output panel displays entries similar to the following output:
++
+[source,terminal]
+----
+[Agent Mode] Running build dry-run: mvn compile -q
+[Agent Mode] Dry-run completed: SUCCESS (exit 0)
+[Agent Mode] Applying verified suggestion to workspace
+----
