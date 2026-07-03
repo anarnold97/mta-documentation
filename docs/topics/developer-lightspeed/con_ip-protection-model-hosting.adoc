@@ -44,4 +44,4 @@ After you deploy a self-managed model, override the default LLM provider URL in 
 
 * *Centralized configuration management mode*: Set the provider endpoint URL in the central configuration administered through the {ProductShortName} hub.
 
-Ensure that you securely store any authentication credentials that your self-managed endpoint requires (such as API keys or bearer tokens) and do not commit them to source control.
+Self-managed endpoints require authentication credentials, such as API keys or bearer tokens. These credentials require secure storage and must not be committed to source control.
