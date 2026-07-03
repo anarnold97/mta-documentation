@@ -42,6 +42,6 @@ A self-managed model requires the {mta-dl-plugin} default large language model (
 
 * *Standalone mode*: The custom endpoint URL is configured in the VS Code extension settings for {mta-dl-plugin}.
 
-* *Centralized configuration management mode*: Set the provider endpoint URL in the central configuration administered through the {ProductShortName} hub.
+* *Centralized configuration management mode*: The provider endpoint URL is set in the central configuration administered through the {ProductShortName} hub.
 
 Self-managed endpoints require authentication credentials, such as API keys or bearer tokens. These credentials require secure storage and must not be committed to source control.
