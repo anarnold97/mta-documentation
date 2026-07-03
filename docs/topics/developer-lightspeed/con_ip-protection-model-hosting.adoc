@@ -23,7 +23,7 @@ When you configure {mta-dl-plugin} to use a public, SaaS-based LLM endpoint (suc
 ====
 
 [id="ip-protection-mitigation_{context}"]
-== Recommended mitigation: Self-managed model hosting
+== Self-managed model hosting as a mitigation strategy
 
 Organizations with strict intellectual property (IP) protection requirements, regulatory constraints, or air-gapped network environments should deploy a self-managed LLM instance and configure {mta-dl-plugin} to route all queries to that private endpoint. This approach ensures that source code snippets never leave your controlled infrastructure.
 
