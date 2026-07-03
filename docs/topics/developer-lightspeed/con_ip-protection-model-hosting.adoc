@@ -38,7 +38,7 @@ You can configure {mta-dl-plugin} to use the OpenAI-compatible API endpoint that
 [id="ip-protection-config-pointers_{context}"]
 == Private endpoint configuration
 
-After you deploy a self-managed model, override the default LLM provider URL in {mta-dl-plugin} to point to your private inference endpoint:
+A self-managed model requires the {mta-dl-plugin} default large language model (LLM) provider URL to point to a private inference endpoint. The URL location depends on your deployment:
 
 * *Standalone mode*: Configure the custom endpoint URL in the VS Code extension settings for {mta-dl-plugin}.
 
