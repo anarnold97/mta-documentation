@@ -36,7 +36,7 @@ Red{nbsp}Hat supports the following on-site and self-managed AI platforms for th
 You can configure {mta-dl-plugin} to use the OpenAI-compatible API endpoint that both platforms expose without any additional plugin changes.
 
 [id="ip-protection-config-pointers_{context}"]
-== Configuring {mta-dl-plugin} to use a private endpoint
+== Private endpoint configuration
 
 After you deploy a self-managed model, override the default LLM provider URL in {mta-dl-plugin} to point to your private inference endpoint:
 
