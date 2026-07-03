@@ -10,7 +10,7 @@
 = Data privacy, intellectual property protection, and model hosting considerations
 
 [role="_abstract"]
-Configuring a large language model (LLM) provider for {mta-dl-full} requires an understanding of code transmission to the model and the implications for your organization's intellectual property (IP) and data privacy policies.
+When you configure a large language model (LLM) provider for {mta-dl-full}, understanding code transmission helps you to comply with your organization's intellectual property (IP) and data privacy policies.
 
 [id="ip-protection-risk-disclosure_{context}"]
 == {mta-dl-plugin} code transmission to the LLM
