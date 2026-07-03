@@ -15,7 +15,9 @@ Configuring a large language model (LLM) provider for {mta-dl-full} requires an 
 [id="ip-protection-risk-disclosure_{context}"]
 == {mta-dl-plugin} code transmission to the LLM
 
-To generate accurate migration suggestions, {mta-dl-plugin} constructs a contextual prompt that includes relevant code snippets from the application that you are analyzing. These snippets are transmitted intact to the configured LLM provider. {mta-dl-plugin} does not perform automatic sanitization or redaction of source code before the code is included in a prompt, because altering the code syntax reduces the accuracy of the migration recommendations.
+To generate accurate migration suggestions, {mta-dl-plugin} constructs a contextual prompt. This prompt includes relevant code snippets from the application that you are analyzing. Code snippets are transmitted intact to the configured LLM provider. 
+
+{mta-dl-plugin} does not perform automatic sanitization or redaction of source code before inclusion in a prompt. Altering the code syntax reduces the accuracy of the migration recommendations.
 
 [WARNING]
 ====
