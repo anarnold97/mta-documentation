@@ -19,7 +19,9 @@ To generate accurate migration suggestions, {mta-dl-plugin} constructs a context
 
 [WARNING]
 ====
-When you configure {mta-dl-plugin} to use a public, SaaS-based LLM endpoint (such as a public OpenAI service or a shared Azure OpenAI deployment), {mta-dl-plugin} transmits your source code snippets to that third-party provider for processing. If your codebase contains proprietary algorithms, trade secrets, regulated data, or other sensitive intellectual property, this transmission might expose that information outside your organization's security boundary. This exposure might conflict with your intellectual property protection policies, contractual obligations, or regulatory requirements.
+You can configure {mta-dl-plugin} to use a public, SaaS-based LLM endpoint, such as a public OpenAI service or a shared Azure OpenAI deployment. If you do this, {mta-dl-plugin} transmits your source code snippets to that third-party provider for processing.
+
+Your codebase might contain proprietary algorithms, trade secrets, regulated data, or other sensitive intellectual property. This transmission might expose that information outside your organization's security boundary. This exposure might conflict with your intellectual property protection policies, contractual obligations, or regulatory requirements.
 ====
 
 [id="ip-protection-mitigation_{context}"]
