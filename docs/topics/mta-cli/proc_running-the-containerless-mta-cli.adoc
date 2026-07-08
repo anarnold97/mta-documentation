@@ -3,7 +3,7 @@
 :_mod-docs-content-type: PROCEDURE
 
 [id="running-the-containerless-mta-cli_{context}"]
-= Analyzing an application
+= Analyzing an application in containerless mode
 
 [role="_abstract"]
 By default, the {ProductFullName} command-line interface (CLI) runs in containerless mode. In this mode, the CLI uses the provided shell script to run assessments directly on your local machine, and it does not require Podman or Docker.
