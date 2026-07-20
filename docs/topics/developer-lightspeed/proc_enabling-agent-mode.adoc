@@ -13,7 +13,7 @@ To verify code suggestions automatically with a local build dry run, enable agen
 
 * You have installed the {mta-dl-plugin} extension in Visual Studio Code.
 * Your project has a supported build file (`pom.xml`, `build.gradle`, or `package.json`) at the repository root.
-* The corresponding build tool (Maven, Gradle, or npm) is installed and available on your system `PATH`.
+* You have installed the corresponding build tool (Maven, Gradle, or npm) and added it to your system `PATH`.
 
 .Procedure
 
