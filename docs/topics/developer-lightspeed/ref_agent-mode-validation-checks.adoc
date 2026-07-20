@@ -1,0 +1,15 @@
+// Module included in the following assemblies:
+//
+// * docs/topics/developer-lightspeed/assembly_understanding_dl.adoc
+
+:_mod-docs-content-type: REFERENCE
+[id="agent-mode-validation-checks_{context}"]
+= Agent mode validation checks
+
+Agent mode performs the following verification checks on every code suggestion:
+
+* *Syntax verification*: {mta-dl-plugin} parses the generated code against the grammar rules of the target language. Agent mode detects malformed tokens, unclosed blocks, or other parse-level errors at this stage before any file is written.
+
+* *Method signature and reference checks*: The compiler resolves all newly introduced classes, method calls, field accesses, and variable references against your project's full dependency class path. This class path includes libraries that are declared in the `pom.xml`, `build.gradle`, or `package.json` files. This verification prevents hallucinated or deprecated API calls from entering the codebase.
+
+* *Import and dependency consistency*: Agent mode confirms that every `import` statement that the suggestion adds corresponds to a type that is available on the class path. Agent mode flags missing or incorrect imports for correction.
