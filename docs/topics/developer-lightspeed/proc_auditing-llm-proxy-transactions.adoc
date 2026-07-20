@@ -50,10 +50,7 @@ As of {ProductShortName} 8.2, OpenID Connect (OIDC) user identity is terminated 
 
 The proxy writes standard server output to stdout. You can access these logs by using the `oc logs` command. The logs are useful for diagnosing connectivity issues and errors between the proxy and the LLM provider.
 
-[NOTE]
-====
 Current proxy logs are unstructured uvicorn server output. Each entry contains the HTTP method, request path, and status code, or a Python exception traceback for error conditions. They do not contain structured per-transaction records or user identity information.
-====
 
 .Prerequisites
 * You have installed the {ocp-short} {CLIName} (`oc`).
