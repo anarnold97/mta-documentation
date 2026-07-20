@@ -10,7 +10,7 @@
 = Shutting down the LLM proxy for emergency system isolation
 
 [role="_abstract"]
-You can stop all outbound large language model (LLM) traffic from developer integrated development environments (IDEs) during a security incident. The procedure differs for centralized configuration and standalone mode.
+During a security incident, stop all outbound large language model (LLM) traffic from developer integrated development environments (IDEs). 
 
 [WARNING]
 ====
