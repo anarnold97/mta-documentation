@@ -172,7 +172,7 @@ After you apply either the centralized or standalone isolation procedure, perfor
 
 .Procedure
 
-* On the affected workstation, run the following command to confirm that the endpoint is unreachable:
+* On the affected workstation, confirm that the endpoint is unreachable:
 +
 [source,terminal,subs="+quotes"]
 ----
