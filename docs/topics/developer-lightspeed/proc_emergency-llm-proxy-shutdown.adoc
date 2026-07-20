@@ -57,8 +57,8 @@ spec:
 The Operator reconciles the change and terminates the proxy pod.
 
 .Verification
-. To verify that no proxy pods are running, click **Workloads** > **Pods**.
-. From the **Project** list, select the MTA namespace.
+. To verify that no proxy pods are running, click *Workloads* > *Pods*.
+. From the *Project* list, select the {ProductShortName} namespace.
 . Verify that no pod with `proxy` in the name has a `Running` status.
 
 [id="disable-proxy-cli_{context}"]
