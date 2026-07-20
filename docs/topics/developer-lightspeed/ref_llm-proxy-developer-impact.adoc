@@ -1,0 +1,19 @@
+// Module included in the following assemblies:
+//
+// * docs/developer-lightspeed-guide/master.adoc
+
+:_mod-docs-content-type: REFERENCE
+
+[id="llm-proxy-developer-impact_{context}"]
+= Expected behavior on developer workstations after proxy shutdown
+
+After the Operator terminates the proxy pod, developers experience the following behaviors:
+
+* Any in-progress LLM request from an IDE client receives an immediate `503 Service Unavailable` or `connection refused` error.
+* No further LLM requests can be sent until the proxy is re-enabled.
+* Standard IDE functionality, such as code editing, file navigation, and build tools, is unaffected. Only the Developer Lightspeed AI assistant stops responding.
+* Developers see an error indicator in the Lightspeed panel of their IDE. The exact message depends on the IDE client, but it is typically the following:
++
+----
+Error: Unable to connect to the LLM proxy service. Contact your administrator.
+----

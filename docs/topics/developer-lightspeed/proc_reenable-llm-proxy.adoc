@@ -1,0 +1,44 @@
+// Module included in the following assemblies:
+//
+// * docs/developer-lightspeed-guide/master.adoc
+
+:_mod-docs-content-type: PROCEDURE
+
+[id="reenable-llm-proxy_{context}"]
+= Re-enabling the LLM proxy after an incident
+
+Re-enable the proxy only after your security team confirms that the incident is resolved and the environment is safe.
+
+.Procedure by using the {ocp-short} web console
+
+. Click *Operators* > *Installed Operators*.
+. Select the *Tackle* instance.
+. Click *Actions* > *Edit Tackle*.
+. Set the `kai_llm_proxy_enabled` field to `true`:
++
+[source,yaml]
+----
+spec:
+  kai_llm_proxy_enabled: true
+----
+. Click *Save*, and wait for the proxy pod to reach the `Running` status.
+
+.Procedure by using the CLI
+
+. Patch the Tackle CR to enable the LLM proxy:
++
+[source,terminal,subs="+quotes"]
+----
+$ *oc patch tackle __<tackle_instance_name>__ -n __<mta_namespace>__ \
+  --type=merge -p '{"spec":{"kai_llm_proxy_enabled":true}}'*
+----
+
+.Verification
+
+. Verify that a proxy pod is running:
++
+[source,terminal,subs="+quotes"]
+----
+$ *oc get pods -n __<mta_namespace>__ | grep proxy*
+----
+. Ask a developer to submit a test query from their IDE and confirm that a valid response is returned.

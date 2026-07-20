@@ -1,0 +1,32 @@
+// Module included in the following assemblies:
+//
+// * docs/developer-lightspeed-guide/master.adoc
+
+:_mod-docs-content-type: PROCEDURE
+
+[id="validate-llm-proxy-shutdown_{context}"]
+= Validating that the LLM connection is terminated
+
+After you apply either the centralized or standalone isolation procedure, confirm that outbound LLM traffic is fully blocked.
+
+.Procedure
+
+* On the affected workstation, confirm that the LLM endpoint is unreachable:
++
+[source,terminal,subs="+quotes"]
+----
+$ *curl -v --max-time 10 https://api.openai.com/v1/models*
+----
++
+.Expected output when isolation is active (standalone mode or DNS-blocked)
+[source,terminal,subs="+quotes"]
+----
+* connect to __<ip>__ port 443 failed: Connection refused
+curl: (7) Failed to connect to api.openai.com port 443 after __<X>__ ms: Connection refused
+----
++
+.Expected output when isolation is active (centralized mode, DNS resolves but service is down)
+[source,terminal]
+----
+curl: (22) The requested URL returned error: 503
+----

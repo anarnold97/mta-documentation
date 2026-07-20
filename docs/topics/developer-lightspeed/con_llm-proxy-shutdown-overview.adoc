@@ -1,0 +1,25 @@
+// Module included in the following assemblies:
+//
+// * docs/developer-lightspeed-guide/master.adoc
+
+:_mod-docs-content-type: CONCEPT
+
+[id="llm-proxy-shutdown-overview_{context}"]
+= LLM proxy shutdown overview
+
+[role="_abstract"]
+The procedure for shutting down the LLM proxy differs depending on how {ProductShortName} is deployed.
+
+[WARNING]
+====
+Perform these steps only under the direction of your security or incident-response team. Disabling the proxy immediately severs all in-progress LLM sessions for every connected developer without warning.
+====
+
+Centralized configuration mode:: In Operator-managed or {ocp-short} deployments, the {ProductShortName} Operator manages the LLM proxy lifecycle. You disable the proxy by setting `kai_llm_proxy_enabled: false` in the Tackle custom resource (CR). The Operator then terminates the proxy pod and does not re-create it.
++
+[IMPORTANT]
+====
+Do not directly scale the proxy `Deployment` object to zero replicas. The {ProductShortName} Operator reconciles managed resources and re-creates any manually scaled-down pods. To permanently disable the proxy, edit the Tackle CR.
+====
+
+Standalone mode:: In standalone mode, there is no central proxy component to disable. Each developer IDE connects directly to the configured public LLM endpoint. Network administrators must block this traffic at the corporate firewall or network policy layer.
