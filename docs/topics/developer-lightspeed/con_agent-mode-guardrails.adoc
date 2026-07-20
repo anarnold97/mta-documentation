@@ -9,7 +9,11 @@
 [role="_abstract"]
 In agent mode, {mta-dl-plugin} includes an output verification mechanism that acts as a native compiler validation loop. This mechanism ensures that AI-generated code suggestions are syntactically valid and compatible with your classpath before they are written to disk.
 
-This verification mechanism provides a programmatic guardrail against common large language model (LLM) risks, such as hallucinated application programming interface (API) signatures, references to removed or deprecated methods, and syntactically broken output.
+The verification mechanism provides a programmatic guardrail against common large language model (LLM) risks, for example:
+
+ * Hallucinated application programming interface (API) signatures
+ * References to removed or deprecated methods
+ * Syntactically broken output
 
 == Agent mode code quality safeguards
 
