@@ -38,12 +38,13 @@ Do not directly scale the proxy `Deployment` object to zero replicas. The {Produ
 
 .Procedure
 
-. In the {ocp-short} web console, switch to the **Administrator** perspective.
-. Click **Operators** > **Installed Operators**.
-. From the **Project** list, select the MTA namespace (for example, `openshift-mta`).
-. Click **Migration Toolkit for Applications**.
-. Click the **Tackle** tab, and then click the name of your Tackle instance (for example, `mta`).
-. Click **Actions** > **Edit Tackle**.
+. In the {ocp-short} web console, switch to the *Administrator* perspective.
+. Click *Operators* > *Installed Operators*.
+. From the *Project* list, select the {ProductShortName} namespace, for example, `openshift-mta`.
+. Click *Migration Toolkit for Applications*.
+. Click the *Tackle* tab.
+. Cclick the name of your Tackle instance, for example, `mta`.
+. Click *Actions* > *Edit Tackle*.
 . In the YAML editor, find the `spec` section and set the `kai_llm_proxy_enabled` field to `false`:
 +
 [source,yaml]
