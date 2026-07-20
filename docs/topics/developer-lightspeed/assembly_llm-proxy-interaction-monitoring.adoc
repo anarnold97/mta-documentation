@@ -1,0 +1,14 @@
+// Module included in the following assemblies:
+//
+// * docs/developer-lightspeed-guide/master.adoc
+
+:_mod-docs-content-type: ASSEMBLY
+
+[id="assembly-llm-proxy-interaction-monitoring_{context}"]
+= LLM proxy interaction monitoring
+
+The {mta-dl-plugin} LLM proxy acts as a single, administrator-controlled access point between developers and external large language model (LLM) providers. Understanding its data handling and logging behavior is important for organizations with artificial intelligence (AI) system governance requirements.
+
+include::con_llm-proxy-data-handling.adoc[leveloffset=+1]
+
+include::proc_access-llm-proxy-logs.adoc[leveloffset=+1]
