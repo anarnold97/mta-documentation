@@ -128,8 +128,9 @@ Re-enable the proxy only after your security team confirms that the incident is 
 
 .Procedure by using the {ocp-short} web console
 
-. Click **Operators** > **Installed Operators**, and select the **Tackle** instance.
-. Click **Actions** > **Edit Tackle**.
+. Click *Operators* > *Installed Operators*.
+. Select the *Tackle* instance.
+. Click *Actions* > *Edit Tackle*.
 . Set the `kai_llm_proxy_enabled` field to `true`:
 +
 [source,yaml]
