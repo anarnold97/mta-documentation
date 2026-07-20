@@ -110,7 +110,7 @@ No resources found in mta namespace.
 [id="developer-impact_{context}"]
 === Expected behavior on developer workstations
 
-After the Operator terminates the proxy pod:
+After the Operator terminates the proxy pod, you can expect the following behaviors on the developer workstations:
 
 * Any in-progress LLM request from an IDE client receives an immediate `503 Service Unavailable` or `connection refused` error.
 * No further LLM requests can be sent until the proxy is re-enabled.
