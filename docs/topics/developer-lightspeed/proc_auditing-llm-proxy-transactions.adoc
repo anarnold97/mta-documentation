@@ -42,7 +42,7 @@ Data persistence:: LLM interactions are stored in the llama-stack PostgreSQL dat
 
 [NOTE]
 ====
-As of MTA 8.2, OIDC user identity is terminated at the Hub and is not passed to or stored by the proxy.
+As of {ProductShortName} 8.2, OpenID Connect (OIDC) user identity is terminated at the Hub and is not passed to or stored by the proxy.
 ====
 
 [id="llm-proxy-log-access_{context}"]
