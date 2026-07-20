@@ -64,7 +64,7 @@ The Operator reconciles the change and terminates the proxy pod.
 [id="disable-proxy-cli_{context}"]
 === Disabling the LLM proxy by using the CLI
 
-You can use this method for scripted incident response or when the web console is unavailable.
+For scripted incident response or when the web console is unavailable, disable the LLM proxy by using the command-line interface (CLI).
 
 .Prerequisites
 * You have installed the OpenShift CLI (`oc`).
