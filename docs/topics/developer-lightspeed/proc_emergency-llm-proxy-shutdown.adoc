@@ -138,7 +138,7 @@ Re-enable the proxy only after your security team confirms that the incident is 
 spec:
   kai_llm_proxy_enabled: true
 ----
-. Click **Save**, and wait for the proxy pod to reach the `Running` status.
+. Click *Save*, and wait for the proxy pod to reach the `Running` status.
 
 .Procedure by using the CLI
 
