@@ -52,7 +52,7 @@ Do not directly scale the proxy `Deployment` object to zero replicas. The {Produ
 spec:
   kai_llm_proxy_enabled: false
 ----
-. Click **Save**.
+. Click *Save*.
 +
 The Operator reconciles the change and terminates the proxy pod.
 
