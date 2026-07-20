@@ -5,14 +5,17 @@
 :_mod-docs-content-type: PROCEDURE
 
 [id="reenable-llm-proxy_{context}"]
-= Re-enabling the LLM proxy after an incident
+= Re-enable the LLM proxy after an incident
 
+[role="_abstract"]
 Re-enable the proxy only after your security team confirms that the incident is resolved and the environment is safe.
 
-.Procedure by using the {ocp-short} web console
+== Re-enable the proxy by using the {ocp-short} web console
+
+.Procedure
 
 . Click *Operators* > *Installed Operators*.
-. Select the *Tackle* instance.
+. Click the *Tackle* instance.
 . Click *Actions* > *Edit Tackle*.
 . Set the `kai_llm_proxy_enabled` field to `true`:
 +
@@ -21,17 +24,26 @@ Re-enable the proxy only after your security team confirms that the incident is 
 spec:
   kai_llm_proxy_enabled: true
 ----
-. Click *Save*, and wait for the proxy pod to reach the `Running` status.
+. Click *Save*.
++
+Wait for the proxy pod to reach the `Running` status.
 
-.Procedure by using the CLI
+== Re-enable the proxy by using the CLI
 
-. Patch the Tackle CR to enable the LLM proxy:
+.Procedure
+
+. Patch the Tackle custom resource (CR) to enable the LLM proxy:
 +
 [source,terminal,subs="+quotes"]
 ----
-$ *oc patch tackle __<tackle_instance_name>__ -n __<mta_namespace>__ \
-  --type=merge -p '{"spec":{"kai_llm_proxy_enabled":true}}'*
+$ oc patch tackle __<tackle_instance_name>__ -n __<mta_namespace>__ \
+  --type=merge -p '{"spec":{"kai_llm_proxy_enabled":true}}'
 ----
++
+where:
++
+`<tackle_instance_name>`:: Specifies the name of your Tackle instance.
+`<mta_namespace>`:: Specifies the name of the {ProductShortName} namespace.
 
 .Verification
 
@@ -39,6 +51,11 @@ $ *oc patch tackle __<tackle_instance_name>__ -n __<mta_namespace>__ \
 +
 [source,terminal,subs="+quotes"]
 ----
-$ *oc get pods -n __<mta_namespace>__ | grep proxy*
+$ oc get pods -n __<mta_namespace>__ | grep proxy
 ----
-. Ask a developer to submit a test query from their IDE and confirm that a valid response is returned.
++
+where:
++
+`<mta_namespace>`:: Specifies the name of the {ProductShortName} namespace.
++
+. Ask a developer to submit a test query from their integrated development environment (IDE) and confirm that a valid response is returned.
