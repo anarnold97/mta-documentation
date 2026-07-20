@@ -18,19 +18,17 @@ To verify code suggestions automatically with a local build dry run, enable agen
 .Procedure
 
 . Enable agent mode in one of the following ways:
-+
---
+
 * By using the command palette:
 
-.. Press Ctrl+Shift+P on Linux or Windows, or Cmd+Shift+P on macOS, to open the command palette.
+.. Open the command palette by pressing Ctrl+Shift+P on Linux or Windows, or Cmd+Shift+P on macOS.
 .. Type `Preferences: Open User Settings (JSON)` to open the `settings.json` file.
 .. Set the `mta-vscode-extension.genai.agentMode` parameter to `true`.
 
 * By using the extension settings panel:
 
-.. Click **Extensions** > **{mta-dl-plugin}** > **Settings**.
-.. Select the **Agent Mode** checkbox to enable agent mode.
---
+.. Click *Extensions* > *{mta-dl-plugin}* > *Settings*.
+.. Enable agent mode by selecting the *Agent Mode* checkbox.
 
 . Restart the IDE language server when you are prompted to apply the change.
 
