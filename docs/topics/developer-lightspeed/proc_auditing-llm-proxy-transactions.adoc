@@ -48,7 +48,7 @@ As of {ProductShortName} 8.2, OpenID Connect (OIDC) user identity is terminated 
 [id="llm-proxy-log-access_{context}"]
 == Accessing LLM proxy pod logs
 
-The proxy writes standard server output to stdout. You can access these logs by using the `oc logs` command. The logs are useful for diagnosing connectivity issues and errors between the proxy and the LLM provider.
+To diagnose connectivity errors between the proxy and the LLM provider, use the `oc logs` command. The proxy writes standard server output to stdout.
 
 Current proxy logs are unstructured uvicorn server output. Each entry contains the HTTP method, request path, and status code, or a Python exception traceback for error conditions. They do not contain structured per-transaction records or user identity information.
 
