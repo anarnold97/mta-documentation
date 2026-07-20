@@ -5,13 +5,14 @@
 :_mod-docs-content-type: PROCEDURE
 
 [id="disable-llm-proxy-web-console_{context}"]
-= Disabling the LLM proxy by using the {ocp-short} web console
+= Disable the LLM proxy by using the {ocp-short} web console
 
-Disable the LLM proxy in centralized configuration mode by editing the Tackle custom resource (CR) in the {ocp-short} web console.
+[role="_abstract"]
+To disable the LLM proxy in centralized configuration mode, edit the Tackle custom resource (CR) in the {ocp-short} web console.
 
 .Prerequisites
 
-* You are logged in to the {ocp-short} web console with the `cluster-admin` role or an equivalent role that grants write access to the MTA namespace.
+* You are logged in to the {ocp-short} web console with the `cluster-admin` role or an equivalent role that grants write access to the {ProductShortName} namespace.
 * You have identified the namespace where {ProductShortName} is installed, for example, `mta` or `openshift-mta`.
 
 .Procedure
