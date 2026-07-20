@@ -3,11 +3,12 @@
 // * docs/topics/developer-lightspeed/assembly_understanding_dl.adoc
 
 :_mod-docs-content-type: PROCEDURE
+
 [id="enabling-agent-mode_{context}"]
-= Enabling agent mode
+= Enable agent mode
 
 [role="_abstract"]
-To verify code suggestions automatically with a local build dry run, enable agent mode in {mta-dl-plugin} through the Visual Studio Code command palette or the extension settings panel.
+To verify code suggestions automatically with a local build dry run, enable agent mode in the {mta-dl-plugin} through the Visual Studio Code command palette or the extension settings panel.
 
 .Prerequisites
 
@@ -18,23 +19,20 @@ To verify code suggestions automatically with a local build dry run, enable agen
 .Procedure
 
 . Enable agent mode in one of the following ways:
-
++
 * By using the command palette:
-
-.. Open the command palette by pressing Ctrl+Shift+P on Linux or Windows, or Cmd+Shift+P on macOS.
+.. Press Ctrl+Shift+P on Linux or Windows, or Cmd+Shift+P on macOS, to open the command palette.
 .. Type `Preferences: Open User Settings (JSON)` to open the `settings.json` file.
 .. Set the `mta-vscode-extension.genai.agentMode` parameter to `true`.
-
 * By using the extension settings panel:
-
 .. Click *Extensions* > *{mta-dl-plugin}* > *Settings*.
-.. Enable agent mode by selecting the *Agent Mode* checkbox.
+.. Select the *Agent Mode* checkbox to enable agent mode.
 
-. Restart the IDE language server when you are prompted to apply the change.
+. Restart the integrated development environment (IDE) language server when you are prompted to apply the change.
 
 .Verification
 
-. Open the Lightspeed output panel by clicking *View* > *Output* > *Red{nbsp}Hat Developer Lightspeed*.
+. Click *View* > *Output* > *Red{nbsp}Hat Developer Lightspeed* to open the Lightspeed output panel.
 . Request a code suggestion.
 . Verify that the output panel displays entries similar to the following output:
 +
