@@ -34,7 +34,7 @@ Do not directly scale the proxy `Deployment` object to zero replicas. The {Produ
 
 .Prerequisites
 * You are logged in to the Red{nbsp}Hat {ocp-short} web console with the `cluster-admin` role or an equivalent role that grants write access to the MTA namespace.
-* You have identified the namespace where MTA is installed (for example, `mta` or `openshift-mta`).
+* You have identified the namespace where {ProductShortName} is installed, for example, `mta` or `openshift-mta`.
 
 .Procedure
 
