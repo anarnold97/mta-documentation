@@ -34,7 +34,8 @@ To verify code suggestions automatically with a local build dry run, enable agen
 
 .Verification
 
-. Open the Lightspeed output panel by clicking **View** > **Output** > **Red{nbsp}Hat Developer Lightspeed**, and request a code suggestion.
+. Open the Lightspeed output panel by clicking *View* > *Output* > *Red{nbsp}Hat Developer Lightspeed*.
+. Request a code suggestion.
 . Verify that the output panel displays entries similar to the following output:
 +
 [source,terminal]
