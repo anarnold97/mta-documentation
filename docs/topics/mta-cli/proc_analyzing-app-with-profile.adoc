@@ -15,38 +15,15 @@ Migrators can use analysis profiles and custom rules downloaded from the {Produc
 * The Architect added the analysis profile in the application's target profile in the {ProductShortName} {WebName}. 
 * In the {ProductShortName} {WebName}, the application has a tag that matches an archetype tag.
 * The application you want to sync is available in your local system.
+* You authenticated the {CLIName} to the Hub.
 
 .Procedure
 
-. Log in to the {ProductShortName} Hub with the following command.
-+
-[subs="+quotes"]
-----
-$ mta-cli config login 
-----
-
-. Enter the `Host`, `Username`, and `Password` to connect to the Hub.
-+
-[subs="+quotes"]
-----
-$ mta-cli config login
-----
-+
-[subs="+quotes"]
-----
-Host: https://mta-namespace.apps.cluster.example.com/hub
-Username: _<my_user_name>_
-Password: _<my_password>_
-----
-
-* The `Host` is the `tackle` URL of {ProductShortName} deployed in your cluster that exposes the `hub` endpoint.
-* The `Username` and `Password` are the `keycloak` credentials that you use to log in to {ProductShortName} in your cluster.
-
-. Sync the application with its remote repository and download the profile and custom rules files from the Hub.
+. Sync the application with its remote repository and download the profile and custom rules files from the Hub:
 +
 [subs="+quotes, macros"]
 ....
-$ mta-cli config sync --url \https://github.com/_<my_app_repository>_ --application-path _<path_to_my_app>_ --insecure
+$ mta-cli config sync --url \https://example.com/_<my_app_repository>_ --application-path _<path_to_my_app>_ --insecure
 ....
 +
 [NOTE]
