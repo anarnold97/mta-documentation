@@ -30,14 +30,14 @@ where:
 `<tackle_instance_name>`:: Specifies the name of your Tackle instance.
 `<mta_namespace>`:: Specifies the name of the {ProductShortName} namespace.
 +
-.Example
+For example, to disable the LLM proxy for the `mta` instance in the `openshift-mta` namespace, enter:
++
 [source,terminal]
 ----
 $ oc patch tackle mta -n openshift-mta \
   --type=merge -p '{"spec":{"kai_llm_proxy_enabled":false}}'
 ----
 +
-.Expected output
 [source,terminal]
 ----
 tackle.tackle.konveyor.io/mta patched
