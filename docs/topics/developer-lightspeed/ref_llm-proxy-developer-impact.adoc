@@ -8,9 +8,9 @@
 = Expected behavior on developer workstations after proxy shutdown
 
 [role="_abstract"]
-After the Operator terminates the large language model (LLM) proxy pod, developers experience specific connection errors and behavior changes in their integrated development environment (IDE).
+Review the expected connection errors and behavior changes in the developer integrated development environment (IDE) to understand the impact of proxy shutdown.
 
-Developers experience the following behaviors after the proxy is shut down:
+A proxy shutdown causes the following behavior changes:
 
 * Any in-progress LLM request from an IDE client receives an immediate `503 Service Unavailable` or `connection refused` error.
 * Developers cannot send further LLM requests until the proxy is re-enabled.
