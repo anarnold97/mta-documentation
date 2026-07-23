@@ -8,8 +8,8 @@
 = Autocorrection on compilation failure
 
 [role="_abstract"]
-When a compilation step fails, the error is not immediately displayed. Instead, the {mta-dl-plugin} uses the compiler diagnostic output as additional context to generate a corrected suggestion from the {mta-dl-full} model.
+To understand how the system handles compilation errors during an analysis, review the autocorrection mechanism. The {mta-dl-full} extension uses compiler diagnostic output to generate corrected suggestions instead of immediately displaying errors.
 
-This retry loop runs up to two times for minor errors, such as a single unresolved import or a mismatched method argument type.
+When a compilation step fails, the `{mta-dl-plugin}` uses the diagnostic output as additional context. It generates a corrected suggestion from the `{mta-dl-full}` model. This retry loop runs up to two times for minor errors. Examples include a single unresolved import or a mismatched method argument type.
 
-If the suggestion cannot be corrected within the retry limit, agent mode displays the original compiler output alongside the suggestion and marks the code as unverified. You can then review and manually resolve the issue before you apply the change.
+If the retry limit is reached, agent mode marks the code as unverified. It also displays the original compiler output alongside the suggestion. The code requires manual resolution before the change is applied.
