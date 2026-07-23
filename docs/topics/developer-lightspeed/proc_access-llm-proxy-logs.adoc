@@ -29,7 +29,8 @@ where:
 +
 `<mta_namespace>`:: Specifies the name of the {ProductShortName} namespace.
 +
-.Example output
+The command returns output similar to the following example:
++
 [source,terminal]
 ----
 mta-ui-mta-proxy-7d6f9b8c4-xk2pq   1/1   Running   0   2d
