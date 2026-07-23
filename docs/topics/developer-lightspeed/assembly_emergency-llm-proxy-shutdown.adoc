@@ -17,6 +17,6 @@ include::proc_disable-llm-proxy-cli.adoc[leveloffset=+1]
 
 include::ref_llm-proxy-developer-impact.adoc[leveloffset=+1]
 
-include::proc_reenable-llm-proxy.adoc[leveloffset=+1]
+include::assembly_reenable-llm-proxy-after-incident.adoc[leveloffset=+1]
 
 include::proc_validate-llm-proxy-shutdown.adoc[leveloffset=+1]

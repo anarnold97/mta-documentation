@@ -1,34 +1,13 @@
 // Module included in the following assemblies:
 //
-// * docs/developer-lightspeed-guide/master.adoc
+// * docs/developer-lightspeed-guide/assembly_reenable-llm-proxy-after-incident.adoc
 
 :_mod-docs-content-type: PROCEDURE
-
-[id="reenable-llm-proxy_{context}"]
-= Re-enable the LLM proxy after an incident
+[id="reenable-proxy-using-cli_{context}"]
+= Re-enable the proxy by using the CLI
 
 [role="_abstract"]
-Re-enable the proxy only after your security team confirms that the incident is resolved and the environment is safe.
-
-== Re-enable the proxy by using the {ocp-short} web console
-
-.Procedure
-
-. Click *Operators* > *Installed Operators*.
-. Click the *Tackle* instance.
-. Click *Actions* > *Edit Tackle*.
-. Set the `kai_llm_proxy_enabled` field to `true`:
-+
-[source,yaml]
-----
-spec:
-  kai_llm_proxy_enabled: true
-----
-. Click *Save*.
-+
-Wait for the proxy pod to reach the `Running` status.
-
-== Re-enable the proxy by using the CLI
+You can re-enable the LLM proxy by using the command-line interface (CLI) to restore functionality.
 
 .Procedure
 
