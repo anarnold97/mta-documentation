@@ -7,7 +7,7 @@
 = Agent mode validation checks
 
 [role="_abstract"]
-In agent mode, the {mta-dl-plugin} performs specific verification checks on every code suggestion to ensure code validity.
+To understand how the system ensures code validity, review the specific verification checks the {mta-dl-plugin} performs in agent mode. 
 
 The {mta-dl-plugin} performs the following verification checks:
 
