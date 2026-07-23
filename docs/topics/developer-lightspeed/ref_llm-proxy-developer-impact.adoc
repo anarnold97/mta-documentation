@@ -15,7 +15,9 @@ A proxy shutdown causes the following behavior changes:
 * Any in-progress LLM request from an IDE client receives an immediate `503 Service Unavailable` or `connection refused` error.
 * Developers cannot send further LLM requests until the proxy is re-enabled.
 * Standard IDE functionality, such as code editing, file navigation, and build tools, is not affected. Only the Developer Lightspeed AI assistant stops responding.
-* Developers see an error indicator in the Lightspeed panel of their IDE. The exact message depends on the IDE client, but it is typically the following:
+* An error indicator appears in the Lightspeed panel of the IDE.
++
+The exact message depends on the IDE client, but it typically resembles the following:
 +
 [source,text]
 ----
