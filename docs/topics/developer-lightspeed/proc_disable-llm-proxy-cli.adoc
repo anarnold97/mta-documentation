@@ -56,7 +56,6 @@ where:
 +
 `<mta_namespace>`:: Specifies the name of the {ProductShortName} namespace.
 +
-.Expected output
 [source,terminal]
 ----
 No resources found in mta namespace.
