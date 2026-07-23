@@ -45,7 +45,6 @@ $ oc logs -f __<proxy_pod_name>__ -n __<mta_namespace>__
 where:
 +
 `<proxy_pod_name>`:: Specifies the name of the proxy pod.
-`<mta_namespace>`:: Specifies the name of the {ProductShortName} namespace.
 
 . To retrieve logs from a previous (terminated) proxy pod, add the `--previous` flag to the command:
 +
